@@ -48,3 +48,17 @@ Public Class preferenceModel</br>
     Public brand As String</br>
     Public description As String</br>
 End Class</br>
+
+'zum erstellen einer Json Datei brauch man folgenden Code:
+ Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click</br>
+        Dim p As New preferenceModel</br>
+
+        p.firstName = TextBox1.Text
+        p.middleName = TextBox2.Text
+        p.lastName = TextBox3.Text
+
+        Dim result = JsonConvert.SerializeObject(p)
+
+        RichTextBox1.Text = result
+
+    End Sub
