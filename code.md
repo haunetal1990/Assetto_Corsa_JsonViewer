@@ -40,3 +40,11 @@ dass das per Json doch viel einfacher geht.
         End With
     End Sub
 End Class
+
+' zusätzlich muss man per Projekt / Komponente hinzufügen / Codedatei eine preferenceModel.vb hinzufügen. Diese beeinhaltet folgendes:
+
+Public Class preferenceModel
+    Public Name As String
+    Public brand As String
+    Public description As String
+End Class
