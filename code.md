@@ -28,9 +28,7 @@ Public Class Form1</br>
         End If
     End Sub
 
-' bis hier hin ging es darum, per Listview anzuzeigen, wie viele ui_car.json in den jeweiligen Unterordnern (link in Textbox) zu finden sind.
-diese sollten dann in die Listview angezeigt werden. Ein weiterer Gedanke war, mehr Informationen heraus zu holen. Bis ich dann gemerkt hatte,
-dass das per Json doch viel einfacher geht.
+' bis hier hin ging es darum, per Listview anzuzeigen, wie viele ui_car.json in den jeweiligen Unterordnern (link in Textbox) zu finden sind. diese sollten dann in die Listview angezeigt werden. Ein weiterer Gedanke war, mehr Informationen heraus zu holen. Bis ich dann gemerkt hatte, dass das per Json doch viel einfacher geht.
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim result As preferenceModel = JsonConvert.DeserializeObject(Of preferenceModel)(RichTextBox1.Text)
@@ -50,6 +48,7 @@ Public Class preferenceModel</br>
 End Class</br>
 
 'zum erstellen einer Json Datei brauch man folgenden Code:
+
  Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click</br>
         Dim p As New preferenceModel</br>
 
