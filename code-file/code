@@ -28,7 +28,7 @@ Public Class Form1
         End If
     End Sub
 
-' bis hier hin ging es darum, per Listview anzuzeigen, wie viele ui_car.json in den jeweiligen Unterordnern (link in Textbox) zu finden sind. diese sollten dann in die Listview angezeigt werden. Ein weiterer Gedanke war, mehr Informationen heraus zu holen. Bis ich dann gemerkt hatte, dass das per Json doch viel einfacher geht.
+> Up to this point, it was about using a list view to show how many ui_car.json can be found in the respective subfolders (link in text box). these should then be displayed in the listview. Another thought was to get more information out. Until I realized that this is much easier to do with Json.
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim result As preferenceModel = JsonConvert.DeserializeObject(Of preferenceModel)(RichTextBox1.Text)
@@ -39,7 +39,7 @@ Public Class Form1
     End Sub
 End Class
 
-' zusätzlich muss man per Projekt / Komponente hinzufügen / Codedatei eine preferenceModel.vb hinzufügen. Diese beeinhaltet folgendes:
+> additionally you have to add a preferenceModel.vb via project/add component/code file. This includes the following:
 
 Public Class preferenceModel
     Public Name As String
@@ -47,7 +47,7 @@ Public Class preferenceModel
     Public description As String
 End Class
 
-'zum erstellen einer Json Datei brauch man folgenden Code:
+> to create a Json file you need the following code:
 
  Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click</br>
         Dim p As New preferenceModel</br>
