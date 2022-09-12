@@ -1,2 +1,2 @@
 # JSon Viewer for Assetto Corsa</br>
-Willkommen bei vierten Code für "JSon Viewer for Assetto Corsa".
+With that tool you can view the JSON Files from Assetto Corsa.
